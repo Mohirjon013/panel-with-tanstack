@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John",
+      "surname": "johongirov",
+      "age": 19
+    },
+    {
+      "id": "f4ef",
+      "name": "quwe",
+      "surname": "er",
+      "age": "20"
+    },
+    {
+      "id": "f5d6",
+      "name": "salom",
+      "surname": "nmab gaa",
+      "age": "25"
+    }
+  ]
+}
