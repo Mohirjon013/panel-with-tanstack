@@ -7,8 +7,7 @@ import LoginRoutes from './routes/LoginRoutes'
 
 function App() {
 
-  // const {token} = useContext(Context)
-  const token = null
+  const {token} = useContext(Context)
   if(token){
     return <DashboardRoutes/>
   }

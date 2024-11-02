@@ -3,10 +3,10 @@ import { createContext, useState } from "react";
 export const Context = createContext()
 
 export const AuthContext = ({children}) => {
-    const [token , setToken] = useState(null)
-    const [register , setRegister] = useState(null)
+    const [token , setToken] = useState( JSON.parse(localStorage.getItem("token")) || null)
+    const [register , setRegister] = useState( JSON.parse(localStorage.getItem("register")) || null)
 
-
+    localStorage.setItem("token", JSON.stringify(token));
     return (
         <Context.Provider value={{token, setToken, register, setRegister}}>
             {children}
